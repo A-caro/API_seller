@@ -14,4 +14,4 @@ spring:
     show-sql: true
     hibernate.ddl-auto: update
   application:
-    name: loanservice
+    name: seller-service
