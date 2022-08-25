@@ -6,5 +6,8 @@ spring:
       server:
         git:
           default-label: master
-          uri: 
+          uri: https://github.com/A-caro/API_seller.git
+          search-paths: config-data
 
+  application:
+    name: config-service
