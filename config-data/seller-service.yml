@@ -2,17 +2,16 @@ server:
   port: 8001
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/proyects
-    username: caroatam
-    password: 40975241
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/patagonia_test
+    username:
+    password:
   jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate.ddl-auto: update
+    generate-ddl: true
     show-sql: true
-#spring.jpa.properties.hibernate.format.sql=true
+    application:
+    name: seller-service
 
 eureka:
   client:
