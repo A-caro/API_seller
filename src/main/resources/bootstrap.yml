@@ -1,7 +1,17 @@
 spring:
-  application:
-    name: seller-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/patagonia_test
+    username: caroatam
+    password: 40975241
+
   cloud:
     config:
       enabled: true
       uri: http://localhost:8081
+
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+  application:
+    name: loanservice
