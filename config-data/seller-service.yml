@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/patagonia_test
-    username:
-    password:
+    url: jdbc:mysql://localhost:3306/proyects
+    username: caroatam
+    password: 40975241
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
