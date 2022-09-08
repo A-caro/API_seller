@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -23,4 +25,10 @@ public class Seller {
     String precioProducto;
 
 
+    @ManyToMany(cascade= {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(
+            name = "seller_client",
+            joinColumns = @JoinColumn(name = "seller_id"),
+            inverseJoinColumns = @JoinColumn(name = "client_id"))
+    private List<Client> clientList = new ArrayList<>();
 }

@@ -20,7 +20,9 @@ public class Invoice {
     @Column(name = "fecha")
     private String fecha;
 
-    /*@ManyToOne(cascade = CascadeType.PERSIST)
+    /*
+     Relacion bidireccional
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "fk_client")
     private Client client;*/
 
